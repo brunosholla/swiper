@@ -1,4 +1,4 @@
-#Tue Feb 18 11:03:31 CET 2020
+#Tue Feb 18 12:43:20 CET 2020
 base.0=/Users/user/WebstormProjects/my-new-project/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.1=classes.dex
 renamed.1=classes2.dex
