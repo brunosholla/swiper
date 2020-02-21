@@ -15,8 +15,9 @@ module.exports = StyleSheet.create({
             flex: 1,
             justifyContent: 'center',
             alignItems: 'center',
-            borderRightWidth:1,
-           borderRightColor:"#697078",
+            borderRightWidth:.3,
+            borderRightColor:"#666",
+
 
            // backgroundColor:"#1E2638",
         },
@@ -37,7 +38,7 @@ module.exports = StyleSheet.create({
 
         text: {
             color: '#fff',
-            fontSize: responsiveFontSize(2),
+            fontSize: responsiveFontSize(1.4),
             fontWeight: 'bold',
 
 

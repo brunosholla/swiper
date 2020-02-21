@@ -9,7 +9,7 @@ import {
     FlatList,
     Text,
     View,
-    Dimensions, ImageBackground
+    Dimensions, ImageBackground, Image
 } from 'react-native'
 import Swiper from 'react-native-swiper'
 import Icon from "react-native-vector-icons/FontAwesome5";
@@ -45,7 +45,7 @@ export default class extends Component {
                 onPress={this.ButtonClickFunction}
             >
                 <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-                    <ImageBackground source={require("./images/red.png")} style={{width: 120, height: 62}}>
+                    <ImageBackground source={require("./images/giphy.gif")} style={{width: 120, height: 100}}>
                         <View style={{
                             position: 'absolute',
                             top: 0,
@@ -99,7 +99,7 @@ export default class extends Component {
             activeDotStyle={{opacity: 0}}
             horizontal={false}
             style={styles.wrapper}
-            showsButtons={true}
+            showsButtons={false}
             prevButton={<Icon name="chevron-up" size={20} solid/>}
             nextButton={<Icon name="chevron-down" size={20} solid/>}
             buttonWrapperStyle={{
@@ -109,9 +109,10 @@ export default class extends Component {
                 top: 0,
                 left: 0,
                 flex: 1,
-                paddingHorizontal: 10,
-                paddingVertical: 10,
+               paddingHorizontal: 10,
+              paddingVertical: 10,
                 justifyContent: 'space-between',
+                rotate: '90deg'
 
             }}
         >
@@ -139,6 +140,8 @@ export default class extends Component {
                 </View>
 
                 <View style={{flex: 2, backgroundColor: '#fff'}}>
+                    <Image source={require("./images/balloon.gif")} style={{width: 120, height: 120,marginTop:100}}/>
+                    <Image source={require("./images/balloon.gif")} style={{width: 120, height: 120,marginTop:300}}/>
 
                 </View>
             </View>
