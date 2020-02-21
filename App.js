@@ -28,32 +28,41 @@ export default class extends Component {
         }
     }
 
-    ButtonClickFunction(){
+    ButtonClickFunction() {
         console.log("dfdgd")
     }
+
     createTextListArr = (i) => {
 
         const {data} = this.state;
         let textListArr = [];
-        for (let j = 5 * i; j < 5 * i + 5; j++) {
-            console.log(data[j])
-            textListArr.push(
-                <TouchableOpacity
-                    style={styles.SubmitButtonStyle}
-                    activeOpacity={.5}
-                    onPress={this.ButtonClickFunction}
-                >
-                    <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-                        <ImageBackground source={require("./images/red.png")} style={{width:120,height:62}} >
-                            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
-                                <Text style={styles.text}>{data[j].name}</Text>
-                            </View>
-                        </ImageBackground>
-                    </View>
+        //for (let j = 5 * i; j < 5 * i + 5; j++) {
+        // console.log(data[j])
+        textListArr.push(
+            <TouchableOpacity
+                style={styles.SubmitButtonStyle}
+                activeOpacity={.5}
+                onPress={this.ButtonClickFunction}
+            >
+                <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+                    <ImageBackground source={require("./images/red.png")} style={{width: 120, height: 62}}>
+                        <View style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}>
+                            <Text style={styles.text}>{data[i].name}</Text>
+                        </View>
+                    </ImageBackground>
+                </View>
 
-                </TouchableOpacity>
-            );
-        }
+            </TouchableOpacity>
+        );
+        //}
 
         return textListArr
     }
@@ -63,15 +72,23 @@ export default class extends Component {
         const {data} = this.state;
         let viewListArr = [];
 
-        for (let i = 0; i < data.length / 5; i++) {
+        let dataarr = []
+
+        for (let i = 0; i < data.length; i++) {
             //console.log(data[i].id)
             viewListArr.push(
-                <View key={data[i].id} style={styles.slide1}>
-                    {this.createTextListArr(i)}
-                </View>
+                this.createTextListArr(i)
             );
+            if (i > 0 && i % 5 === 0) {
+                dataarr.push(
+                    <View key={data[i].id} style={styles.slide1}>
+                        {viewListArr}
+                    </View>
+                )
+                viewListArr = []
+            }
         }
-        return viewListArr
+        return dataarr
     }
 
     createSwiper() {
@@ -83,7 +100,7 @@ export default class extends Component {
             horizontal={false}
             style={styles.wrapper}
             showsButtons={true}
-            prevButton={<Icon name="chevron-up" size={20} solid />}
+            prevButton={<Icon name="chevron-up" size={20} solid/>}
             nextButton={<Icon name="chevron-down" size={20} solid/>}
             buttonWrapperStyle={{
                 backgroundColor: 'transparent',
@@ -94,7 +111,8 @@ export default class extends Component {
                 flex: 1,
                 paddingHorizontal: 10,
                 paddingVertical: 10,
-                justifyContent: 'space-between'
+                justifyContent: 'space-between',
+
             }}
         >
             {this.createViewListArr()}
@@ -113,7 +131,7 @@ export default class extends Component {
                 <View style={{
                     flex: 1,
                     flexDirection: 'column',
-                    backgroundColor:"#fff",
+                    backgroundColor: "#fff",
 
                     alignItems: 'flex-start',
                 }}>
