@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import {
-    YellowBox,
-    TouchableHighlight,
-    Button,
-    AppRegistry,
+
     TouchableOpacity,
     StyleSheet,
     FlatList,
@@ -13,8 +10,10 @@ import {
 } from 'react-native'
 import Swiper from 'react-native-swiper'
 import Icon from "react-native-vector-icons/FontAwesome5";
+//import Bubble from "./Animation/Bubble";
+import Bubbles from "./Animation/Bubbles";
 
-const customData = require('./data.json');
+const customData = require('./data/data.json');
 var styles = require('./style');
 
 
@@ -25,11 +24,12 @@ export default class extends Component {
             items: [],
             isLoading: true,
             data: customData,
+            product:0
         }
     }
 
-    ButtonClickFunction() {
-        console.log("dfdgd")
+    generateBubbles(i) {
+        this.setState({product:i})
     }
 
     createTextListArr = (i) => {
@@ -42,10 +42,10 @@ export default class extends Component {
             <TouchableOpacity
                 style={styles.SubmitButtonStyle}
                 activeOpacity={.5}
-                onPress={this.ButtonClickFunction}
+                onPress={()=>this.generateBubbles(i)}
             >
                 <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-                    <ImageBackground source={require("./images/giphy.gif")} style={{width: 120, height: 100}}>
+                    <ImageBackground source={require("./images/back.png")} style={{width: 120, height: 100}}>
                         <View style={{
                             position: 'absolute',
                             top: 0,
@@ -124,7 +124,7 @@ export default class extends Component {
 
     render() {
 
-        //const {data} = this.state;
+        const {data,product} = this.state;
         let swiper = this.createSwiper();
 
         return (
@@ -140,10 +140,10 @@ export default class extends Component {
                 </View>
 
                 <View style={{flex: 2, backgroundColor: '#fff'}}>
-                    <Image source={require("./images/balloon.gif")} style={{width: 120, height: 120,marginTop:100}}/>
-                    <Image source={require("./images/balloon.gif")} style={{width: 120, height: 120,marginTop:300}}/>
+                    <Bubbles name={product}/>
 
                 </View>
+
             </View>
         )
     }
