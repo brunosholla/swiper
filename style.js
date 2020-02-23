@@ -15,8 +15,8 @@ module.exports = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        borderRightWidth: .3,
-        borderRightColor: "#666",
+       // borderRightWidth: .3,
+       // borderRightColor: "#666",
         backgroundColor:"#FFDB0A",
     },
 

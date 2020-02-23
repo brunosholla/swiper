@@ -110,14 +110,14 @@ export default class Bubble extends Component {
     };
 
     render() {
-        //console.log(this.state.category)
+      //console.log("emojiArray::",this.state.emojiArray.length)
         let emojiComponents = this.state.emojiArray.map((emoji) => {
             return (
                 <AnimatedEmoji
                     key={emoji.key}
                     index={emoji.key}
                     ref={ref => this._emojis[emoji.key] = ref}
-                    style={{bottom: emoji.yPosition}}
+                    style={{bottom: emoji.yPosition,marginTop:50}}
                     name={emoji.name}
                     size={emoji.size}
                     duration={emoji.duration}
