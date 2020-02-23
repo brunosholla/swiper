@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {
-    Image, ScrollView, Text,
+    Image, ImageBackground, ScrollView, Text,
 
     View,
 
@@ -42,10 +42,10 @@ export default class extends Component {
                         }}
                     />
                 </View>
-                <View style={{flex: 1, flexDirection: 'row', backgroundColor: '#FFDB0A'}}>
-                    <View style={{backgroundColor: '#FFDB0A'}}>
+                <View style={{flex: 1, flexDirection: 'row', backgroundColor:"#FFDB0A"}}>
+                    <ImageBackground source={ require('./images/bg.png')} style={{height: '100%'}}>
                         <Bubble/>
-                    </View>
+                    </ImageBackground>
 
                 </View>
 

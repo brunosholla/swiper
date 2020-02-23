@@ -8,7 +8,7 @@ import React, {Component} from 'react';
 import {
     StyleSheet,
     Dimensions,
-    View,
+    View, TouchableOpacity,
 } from 'react-native';
 import {AnimatedEmoji} from 'react-native-animated-emoji';
 
@@ -20,6 +20,7 @@ const WINDOW_HEIGHT = Dimensions.get('window').height;
 const EMOJI_AMOUNT = 20;
 
 export default class Bubble extends Component {
+
 
     constructor(props) {
         super(props);
@@ -34,6 +35,7 @@ export default class Bubble extends Component {
         this._emojis = {};
         this.emojiIndex = 0;
         this.getProducts = this.getProducts.bind(this)
+        this._onPressButton = this._onPressButton.bind(this)
     }
 
     getProducts() {
@@ -41,7 +43,7 @@ export default class Bubble extends Component {
         const {category} = this.props
 
         const prods = products.filter(el => el.category === category) || []
-        this.setState({randomEmojis: prods},()=>this.genEmoji())
+        this.setState({randomEmojis: prods}, () => this.genEmoji())
 
 
     }
@@ -51,7 +53,7 @@ export default class Bubble extends Component {
         // Adjust scroll so these new items don't push the old ones out of view.
         // (snapshot here is the value returned from getSnapshotBeforeUpdate)
         if (prevProps.category !== this.props.category) {
-            console.log("this.props.category::",this.props.category)
+            console.log("this.props.category::", this.props.category)
             this.getProducts()
             //console.log("this.props.category::",this.props.category)
         }
@@ -59,7 +61,7 @@ export default class Bubble extends Component {
 
     componentDidMount() {
         const {category} = this.props
-        this.setState({category, randomEmojis: products},()=>this.genEmoji())
+        this.setState({category, randomEmojis: products}, () => this.genEmoji())
         /**
          * Generate `EMOJI_AMOUNT` emojis for initial rendering
          */
@@ -67,7 +69,7 @@ export default class Bubble extends Component {
     }
 
     genEmoji() {
-        const {randomEmojis}=this.state
+        const {randomEmojis} = this.state
         for (let i = 0; i < randomEmojis.length; i++) {
             this.generateEmoji();
         }
@@ -83,7 +85,7 @@ export default class Bubble extends Component {
         const newEmojis = Object.assign(emojiArray, []);
 
         let index = Math.floor(Math.random() * Math.floor(12));
-       // console.log("randomEmojis["+index+"]::",randomEmojis[index])
+        // console.log("randomEmojis["+index+"]::",randomEmojis[index])
         if (!randomEmojis[index]) return;
         const emoji = {
             key: this.emojiIndex,
@@ -109,20 +111,29 @@ export default class Bubble extends Component {
         this.setState({emojiArray: newEmojis}, () => this.generateEmoji());
     };
 
+    _onPressButton(name) {
+
+        console.table(name)
+    }
+
     render() {
-      //console.log("emojiArray::",this.state.emojiArray.length)
+        //console.log("emojiArray::",this.state.emojiArray.length)
         let emojiComponents = this.state.emojiArray.map((emoji) => {
             return (
-                <AnimatedEmoji
-                    key={emoji.key}
-                    index={emoji.key}
-                    ref={ref => this._emojis[emoji.key] = ref}
-                    style={{bottom: emoji.yPosition,marginTop:50}}
-                    name={emoji.name}
-                    size={emoji.size}
-                    duration={emoji.duration}
-                    onAnimationCompleted={this.onAnimationCompleted}
-                />
+
+                    <AnimatedEmoji
+                        key={emoji.key}
+                        index={emoji.key}
+                        ref={ref => this._emojis[emoji.key] = ref}
+                        style={{bottom: emoji.yPosition, marginTop: 50}}
+                        name={emoji.name}
+                        size={emoji.size}
+                        duration={emoji.duration}
+                        onAnimationCompleted={this.onAnimationCompleted}
+                        _onPressButton={this._onPressButton}
+
+                    />
+
             )
         });
 
