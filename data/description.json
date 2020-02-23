@@ -1,0 +1,88 @@
+[
+  {
+    "id": 100,
+    "pronunciation": "shān",
+    "meaning":"mountain"
+  },
+  {
+    "id": 101,
+    "pronunciation": "rén",
+    "meaning":"person/people/humanity"
+
+  },
+  {
+    "id": 102,
+    "pronunciation": "口",
+    "meaning":1
+
+  },
+  {
+    "id": 103,
+    "pronunciation": "刀",
+    "meaning":1
+  },
+  {
+    "id": 104,
+    "pronunciation": "木",
+    "meaning":1
+
+  },
+  {
+    "id": 105,
+    "pronunciation": "日",
+    "meaning":1
+
+  },
+  {
+    "id": 106,
+    "pronunciation": "月",
+    "meaning":1
+
+  },
+  {
+    "id": 107,
+    "pronunciation": "女",
+    "meaning":1
+
+  },
+  {
+    "id": 108,
+    "pronunciation": "子",
+    "meaning":1
+  },
+  {
+    "id": 109,
+    "pronunciation": "馬",
+    "meaning":1
+
+  },
+  {
+    "id": 110,
+    "pronunciation": "鳥",
+    "meaning":2
+
+  },
+  {
+    "id": 111,
+    "pronunciation": "目",
+    "meaning":2
+
+  },
+  {
+    "id": 112,
+    "pronunciation": "口",
+    "meaning":2
+
+  },
+  {
+    "id": 113,
+    "pronunciation": "刀",
+    "meaning":2
+  },
+  {
+    "id": 114,
+    "pronunciation": "木",
+    "meaning":2
+
+  }
+]
