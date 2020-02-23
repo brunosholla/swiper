@@ -13,6 +13,9 @@ import Icon from "react-native-vector-icons/FontAwesome5";
 //import Bubble from "./Animation/Bubble";
 import Bubbles from "./Animation/Bubbles";
 import Bubble from "./Animation/Bubble";
+import CategoriesGrid from "./Animation/CategoriesGrid";
+import BubbleGrid from "./Animation/BubbleGrid";
+
 
 const customData = require('./data/data.json');
 var styles = require('./style');
@@ -134,22 +137,17 @@ export default class extends Component {
                 <View style={{
                     flex: 1,
                     flexDirection: 'column',
-                    backgroundColor: "#fff",
+                    backgroundColor: "#FFDB0A",
 
                     alignItems: 'flex-start',
                 }}>
-                    {swiper}
+                    <CategoriesGrid category={category}/>
                 </View>
 
                 <View style={{flex: 2, backgroundColor: '#1E2638'}}>
-                    <Bubble category={category}/>
+                    <BubbleGrid category={category}/>
                 </View>
-                {/*<View style={{flex: 1, backgroundColor: '#fff'}}>
-                    <Bubbles category={category}/>
-                </View>
-                <View style={{flex: 1, backgroundColor: '#fff'}}>
-                    <Bubbles category={category}/>
-                </View>*/}
+
             </View>
         )
     }
