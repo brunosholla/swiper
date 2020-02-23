@@ -29,30 +29,59 @@
 
   },
   {
-    "id": 100,
-    "name": "山",
+    "id": 105,
+    "name": "日",
+    "category":1
+
+  },
+  {
+    "id": 106,
+    "name": "月",
+    "category":1
+
+  },
+  {
+    "id": 107,
+    "name": "女",
+    "category":1
+
+  },
+  {
+    "id": 108,
+    "name": "子",
+    "category":1
+  },
+  {
+    "id": 109,
+    "name": "馬",
+    "category":1
+
+  },
+  {
+    "id": 110,
+    "name": "鳥",
     "category":2
 
   },
   {
-    "id": 101,
-    "name": "人",
+    "id": 111,
+    "name": "目",
     "category":2
 
   },
   {
-    "id": 102,
+    "id": 112,
     "name": "口",
     "category":2
 
   },
   {
-    "id": 103,
+    "id": 113,
     "name": "刀",
     "category":2
   },
   {
-    "id": 104,
+    "id": 114,
     "name": "木",
     "category":2
 

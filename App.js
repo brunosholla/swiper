@@ -12,6 +12,7 @@ import Swiper from 'react-native-swiper'
 import Icon from "react-native-vector-icons/FontAwesome5";
 //import Bubble from "./Animation/Bubble";
 import Bubbles from "./Animation/Bubbles";
+import Bubble from "./Animation/Bubble";
 
 const customData = require('./data/data.json');
 var styles = require('./style');
@@ -24,12 +25,12 @@ export default class extends Component {
             items: [],
             isLoading: true,
             data: customData,
-            product:0
+            category:0
         }
     }
 
     generateBubbles(i) {
-        this.setState({product:i})
+        this.setState({category:i})
     }
 
     createTextListArr = (i) => {
@@ -40,20 +41,22 @@ export default class extends Component {
         // console.log(data[j])
         textListArr.push(
             <TouchableOpacity
+                key={i}
                 style={styles.SubmitButtonStyle}
                 activeOpacity={.5}
                 onPress={()=>this.generateBubbles(i)}
             >
                 <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-                    <ImageBackground source={require("./images/back.png")} style={{width: 120, height: 100}}>
+                    <ImageBackground source={require("./images/hamb.png")} style={{width: 80, height: 68}}>
                         <View style={{
                             position: 'absolute',
-                            top: 0,
+                            top: -10,
                             left: 0,
                             right: 0,
                             bottom: 0,
                             justifyContent: 'center',
-                            alignItems: 'center'
+                            alignItems: 'center',
+
                         }}>
                             <Text style={styles.text}>{data[i].name}</Text>
                         </View>
@@ -123,8 +126,7 @@ export default class extends Component {
     }
 
     render() {
-
-        const {data,product} = this.state;
+        const {data,category} = this.state;
         let swiper = this.createSwiper();
 
         return (
@@ -139,11 +141,15 @@ export default class extends Component {
                     {swiper}
                 </View>
 
-                <View style={{flex: 2, backgroundColor: '#fff'}}>
-                    <Bubbles name={product}/>
-
+                <View style={{flex: 2, backgroundColor: '#1E2638'}}>
+                    <Bubble category={category}/>
                 </View>
-
+                {/*<View style={{flex: 1, backgroundColor: '#fff'}}>
+                    <Bubbles category={category}/>
+                </View>
+                <View style={{flex: 1, backgroundColor: '#fff'}}>
+                    <Bubbles category={category}/>
+                </View>*/}
             </View>
         )
     }

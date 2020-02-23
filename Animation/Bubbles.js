@@ -17,8 +17,8 @@ export default class Bubbles extends Component {
     }
 
     generateBubbles() {
-        const {name} = this.props
-        return productet.filter(el => el.category === name) || []
+        const {category} = this.props
+        return productet.filter(el => el.category === category) || []
 
     }
 
@@ -26,10 +26,11 @@ export default class Bubbles extends Component {
 
         const products = this.generateBubbles()
         return (
-            products.map(p => {
+            products.map((p,index) => {
                 return (
-                    <View style={{flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                    <View key={index} style={{flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                         <Animate bubble={
+
                             <ImageBackground source={require("../images/bubble.gif")}
                                              style={{width: 80, height: 80}}>
                                 <View style={{
@@ -47,7 +48,9 @@ export default class Bubbles extends Component {
                                         fontWeight: 'bold',
                                     }}>{p.name}</Text>
                                 </View>
-                            </ImageBackground>}/>
+                            </ImageBackground>
+                        }
+                        />
                     </View>
                 )
 

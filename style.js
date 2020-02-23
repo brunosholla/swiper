@@ -17,9 +17,7 @@ module.exports = StyleSheet.create({
         alignItems: 'center',
         borderRightWidth: .3,
         borderRightColor: "#666",
-
-
-        // backgroundColor:"#1E2638",
+        backgroundColor:"#FFDB0A",
     },
 
     slide2: {
@@ -37,13 +35,17 @@ module.exports = StyleSheet.create({
     },
 
     text: {
-        color: '#fff',
+        color: '#000',
         fontSize: responsiveFontSize(1.4),
         fontWeight: 'bold',
+        //backgroundColor:'#fff',
+
+       // opacity:.8
 
 
     },
     wrapper: {
+
         // width: responsiveWidth(30)
     },
     SubmitButtonStyle: {
