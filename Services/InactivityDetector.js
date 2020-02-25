@@ -1,6 +1,8 @@
 
 import React, { Component } from "react";
 import { PanResponder, StyleSheet, Text, View } from "react-native";
+import { SLEEP_TIME } from 'react-native-dotenv'
+
 import Main from "../Main";
 
 export default class InactivityDetector extends Component {
@@ -23,7 +25,7 @@ export default class InactivityDetector extends Component {
                     this.setState({
                         inactive: true,
                     });
-                }, 3000);
+                }, parseInt(SLEEP_TIME));
                 return false;
             },
         });
