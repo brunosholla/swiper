@@ -138,9 +138,7 @@ export default class Bubble extends Component {
         });
 
         return (
-            <View style={styles.container}>
-                {emojiComponents}
-            </View>
+            emojiComponents
         );
     }
 }
