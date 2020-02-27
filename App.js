@@ -20,7 +20,7 @@ export default class App extends Component {
 
     render() {
 
-        const {isInactive} = this.state
+
         return (
 
                 <InactivityDetector checkActivities={this.checkActivities}/>

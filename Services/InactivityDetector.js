@@ -1,14 +1,15 @@
-
-import React, { Component } from "react";
-import { PanResponder, StyleSheet, Text, View } from "react-native";
-import { SLEEP_TIME } from 'react-native-dotenv'
+import React, {Component} from "react";
+import {PanResponder, StyleSheet, Text, TextInput, View} from "react-native";
+import {SLEEP_TIME} from 'react-native-dotenv'
 
 import Main from "../Main";
+import Adverts from "../Adverts";
 
 export default class InactivityDetector extends Component {
     state = {
         inactive: true,
     };
+
     componentWillMount() {
         this._panResponder = PanResponder.create({
             onMoveShouldSetPanResponderCapture: () => {
@@ -30,6 +31,7 @@ export default class InactivityDetector extends Component {
             },
         });
     }
+
     componentWillUnmount() {
         clearTimeout(this.timeout);
     }
@@ -37,41 +39,10 @@ export default class InactivityDetector extends Component {
     render() {
 
         return (
-            this.state.inactive?  <View style={styles.container}>
-                    <View
-                        style={[styles.activity, this.state.inactive ? styles.inactive : styles.active]}
-                        {...this._panResponder.panHandlers}
-                    >
-                        <Text style={styles.text}>{"Adverts"}</Text>
-                    </View>
-                </View>:
-                <Main pan={this._panResponder.panHandlers}/>
+            this.state.inactive ?
+                <Adverts panResponder={this._panResponder.panHandlers}/> :
+                <Main panResponder={this._panResponder.panHandlers}/>
 
         );
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-    },
-    activity: {
-        width: 200,
-        height: 80,
-        marginBottom: 40,
-        alignItems: "center",
-        justifyContent: "center",
-    },
-    active: {
-        backgroundColor: "tomato",
-    },
-    inactive: {
-        backgroundColor: "black",
-    },
-    text: {
-        color: "#FFF",
-    },
-})

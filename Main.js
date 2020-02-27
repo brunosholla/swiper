@@ -9,7 +9,6 @@ import {
 import Bubble from "./Animation/Bubble";
 
 import {Header, ThemeProvider} from "react-native-elements";
-import InactivityDetector from "./Services/InactivityDetector";
 
 
 const customData = require('./data/data.json');
@@ -45,7 +44,7 @@ export default class Main extends Component {
                     />
                 </View>
 
-                <View style={{flex: 1, flexDirection: 'row', backgroundColor: "#FFDB0A"}} {...this.props.pan}>
+                <View style={{flex: 1, flexDirection: 'row', backgroundColor: "#FFDB0A"}} {...this.props.panResponder}>
                     <ImageBackground source={require('./images/bg.png')} style={{height: '100%', width: '100%'}}>
                         <Bubble/>
                     </ImageBackground>
