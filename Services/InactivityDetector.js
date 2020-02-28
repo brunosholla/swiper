@@ -27,6 +27,7 @@ export default class InactivityDetector extends Component {
                 this.timeout = setTimeout(() => {
                     this.setState({
                         inactive: true,
+                        name:null
                     });
                 }, parseInt(SLEEP_TIME));
                 return false;
@@ -51,7 +52,7 @@ export default class InactivityDetector extends Component {
                 name === null ?
                     <EnterName keepName={this.keepName}/>
                     :
-                    <Main panResponder={this._panResponder.panHandlers}/>
+                    <Main panResponder={this._panResponder.panHandlers} name={name}/>
         );
     }
 }

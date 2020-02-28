@@ -46,7 +46,7 @@ export default class Main extends Component {
 
                 <View style={{flex: 1, flexDirection: 'row', backgroundColor: "#FFDB0A"}} {...this.props.panResponder}>
                     <ImageBackground source={require('./images/bg.png')} style={{height: '100%', width: '100%'}}>
-                        <Bubble/>
+                        <Bubble name={this.props.name}/>
                     </ImageBackground>
 
                 </View>

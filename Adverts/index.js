@@ -15,8 +15,8 @@ export default class Adverts extends Component {
         const items = [
             {
                 uri: require("./images/1.jpg"),
-                title: "",
-                text: "",
+                title: "Test",
+                text: "Test",
                 fullWidth: true,
                 duration:15000
             },
