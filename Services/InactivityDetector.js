@@ -1,13 +1,15 @@
 import React, {Component} from "react";
-import {PanResponder, StyleSheet, Text, TextInput, View} from "react-native";
+import {PanResponder, ImageBackground, StyleSheet, Text, TextInput, View} from "react-native";
 import {SLEEP_TIME} from 'react-native-dotenv'
 
 import Main from "../Main";
 import Adverts from "../Adverts";
+import EnterName from "../Adverts/EnterName";
 
 export default class InactivityDetector extends Component {
     state = {
         inactive: true,
+        name: null
     };
 
     componentWillMount() {
@@ -36,13 +38,23 @@ export default class InactivityDetector extends Component {
         clearTimeout(this.timeout);
     }
 
-    render() {
+    keepName = (name) => {
+        console.log("name::",name)
+        this.setState({name})
+    }
 
+    render() {
+        const {name} = this.state
         return (
             this.state.inactive ?
                 <Adverts panResponder={this._panResponder.panHandlers}/> :
-                <Main panResponder={this._panResponder.panHandlers}/>
-
+                name === null ?
+                    <EnterName keepName={this.keepName}/>
+                    :
+                    <Main panResponder={this._panResponder.panHandlers}/>
         );
     }
 }
+
+
+//<Main panResponder={this._panResponder.panHandlers}/>
