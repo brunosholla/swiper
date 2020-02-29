@@ -2,175 +2,205 @@
   {
     "id": 100,
     "name": "山",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 101,
     "name": "人",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 102,
     "name": "口",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 103,
     "name": "刀",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
   },
   {
     "id": 104,
     "name": "木",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 105,
     "name": "日",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 106,
     "name": "月",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 107,
     "name": "女",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 108,
     "name": "子",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
   },
   {
     "id": 109,
     "name": "馬",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 110,
     "name": "鳥",
-    "category":2
+    "category":2,
+    "meaning":"This is a test"
 
   },
   {
     "id": 111,
     "name": "目",
-    "category":2
+    "category":2,
+    "meaning":"This is a test"
 
   },
   {
     "id": 112,
     "name": "口",
-    "category":2
+    "category":2,
+    "meaning":"This is a test"
 
   },
   {
     "id": 113,
     "name": "刀",
-    "category":2
+    "category":2,
+    "meaning":"This is a test"
   },
   {
     "id": 114,
     "name": "木",
-    "category":2
+    "category":2,
+    "meaning":"This is a test"
 
   },
   {
     "id": 100,
     "name": "山",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 101,
     "name": "人",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 102,
     "name": "口",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 103,
     "name": "刀",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
   },
   {
     "id": 104,
     "name": "木",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 105,
     "name": "日",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 106,
     "name": "月",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 107,
     "name": "女",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 108,
     "name": "子",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
   },
   {
     "id": 109,
     "name": "馬",
-    "category":1
+    "category":1,
+    "meaning":"This is a test"
 
   },
   {
     "id": 110,
     "name": "鳥",
-    "category":2
+    "category":2,
+    "meaning":"This is a test"
 
   },
   {
     "id": 111,
     "name": "目",
-    "category":2
+    "category":2,
+    "meaning":"This is a test"
 
   },
   {
     "id": 112,
     "name": "口",
-    "category":2
+    "category":2,
+    "meaning":"This is a test"
 
   },
   {
     "id": 113,
     "name": "刀",
-    "category":2
+    "category":2,
+    "meaning":"This is a test"
   },
   {
     "id": 114,
     "name": "木",
-    "category":2
+    "category":2,
+    "meaning":"This is a test"
 
   }
 ]

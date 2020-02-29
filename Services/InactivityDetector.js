@@ -40,7 +40,7 @@ export default class InactivityDetector extends Component {
     }
 
     keepName = (name) => {
-        console.log("name::",name)
+
         this.setState({name})
     }
 

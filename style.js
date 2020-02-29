@@ -9,7 +9,7 @@ var {
     StyleSheet,
 } = React;
 
-module.exports = StyleSheet.create({
+export default StyleSheet.create({
 
     slide1: {
         flex: 1,

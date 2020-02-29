@@ -89,6 +89,7 @@ export default class Bubble extends Component {
         if (!randomEmojis[index]) return;
         const emoji = {
             key: this.emojiIndex,
+            meaning:randomEmojis[index].meaning,
             name: randomEmojis[index].name,
             size: Math.floor(Math.random() * Math.floor(20)) + 20,
             duration: Math.floor(Math.random() * Math.floor(10000)) + 2000,
@@ -111,28 +112,28 @@ export default class Bubble extends Component {
         this.setState({emojiArray: newEmojis}, () => this.generateEmoji());
     };
 
-    _onPressButton(name) {
-
-        console.table(name)
+    _onPressButton(emoji) {
+        const {name} = this.props
+        console.log("emoji::",emoji.name,"meaning::",emoji.meaning,"name::",name)
     }
 
     render() {
-        //console.log("emojiArray::",this.state.emojiArray.length)
+      // console.log("emojiArray::",this.state.emojiArray)
         let emojiComponents = this.state.emojiArray.map((emoji) => {
             return (
 
-                    <AnimatedEmoji
-                        key={emoji.key}
-                        index={emoji.key}
-                        ref={ref => this._emojis[emoji.key] = ref}
-                        style={{bottom: emoji.yPosition, marginTop: 50}}
-                        name={emoji.name}
-                        size={emoji.size}
-                        duration={emoji.duration}
-                        onAnimationCompleted={this.onAnimationCompleted}
-                        _onPressButton={this._onPressButton}
+                <AnimatedEmoji
+                    key={emoji.key}
+                    index={emoji.key}
+                    ref={ref => this._emojis[emoji.key] = ref}
+                    style={{bottom: emoji.yPosition, marginTop: 50}}
+                    name={emoji}
+                    size={emoji.size}
+                    duration={emoji.duration}
+                    onAnimationCompleted={this.onAnimationCompleted}
+                    _onPressButton={this._onPressButton}
 
-                    />
+                />
 
             )
         });
