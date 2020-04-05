@@ -1,13 +1,15 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, ImageBackground} from 'react-native';
 import BouncingBalls from './BouncingBall'
+const products = require('../data/products');
 
 export default class BouncingBallsComponent extends PureComponent {
     render() {
         return (
             <ImageBackground style={styles.container} source={require('../images/bg.png')}>
                 <BouncingBalls
-                    amount={10}
+                    amount={products.length}
+                    products={products}
                     animationDuration={5000}
                     minSpeed={30}
                     maxSpeed={200}
@@ -15,6 +17,7 @@ export default class BouncingBallsComponent extends PureComponent {
                     maxSize={100}
                     imageBall={require('../images/bubble.gif')}
                 />
+
             </ImageBackground>
         );
     }

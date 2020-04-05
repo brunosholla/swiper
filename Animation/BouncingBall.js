@@ -6,6 +6,7 @@ let  { width, height } = Dimensions.get("window");
 class BouncingBalls extends Component {
     static propTypes = {
         amount: PropTypes.number.isRequired,
+        products:PropTypes.array.isRequired,
         animationDuration: PropTypes.number.isRequired,
         animationType: PropTypes.func,
         minSpeed: PropTypes.number.isRequired,
@@ -17,6 +18,7 @@ class BouncingBalls extends Component {
 
     static defaultProps = {
         amount: 1,
+        products:["X"],
         animationDuration: 5000,
         minSpeed: 30,
         maxSpeed: 200,
@@ -110,7 +112,7 @@ class BouncingBalls extends Component {
     }
 
     generateCircles() {
-        const {amount, minSpeed, maxSpeed, minSize, maxSize, imageBall, style, ...restProps} = this.props;
+        const {amount,products, minSpeed, maxSpeed, minSize, maxSize, imageBall, style, ...restProps} = this.props;
         const circles = [];
         let width, height, borderRadius, innerStyle, restStyles, item, direction;
 
