@@ -10,6 +10,7 @@ import Bubble from "./Animation/Bubble";
 
 import {Header, ThemeProvider} from "react-native-elements";
 import BouncingBallsComponent from "./Animation/Balls";
+import Printo from "./print/Printo";
 
 
 const customData = require('./data/data.json');
@@ -24,13 +25,20 @@ export default class Main extends Component {
             isLoading: true,
             data: customData,
             category: 0,
+            printo: true
 
         }
+        this.toggleModal = this.toggleModal.bind(this)
+    }
 
+    toggleModal = () => {
+        this.setState(prevState => ({
+            printo: !prevState.printo
+        }));
     }
 
     render() {
-
+        const {printo} = this.state
         return (
             <ThemeProvider>
                 <View>
@@ -46,7 +54,7 @@ export default class Main extends Component {
                 </View>
 
                 <View style={{flex: 1, flexDirection: 'row', backgroundColor: "#FFDB0A"}} {...this.props.panResponder}>
-                   <BouncingBallsComponent/>
+                    {printo?<Printo/>:<BouncingBallsComponent openModal={this.toggleModal}/>}
 
                 </View>
 

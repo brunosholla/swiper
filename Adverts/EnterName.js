@@ -1,5 +1,6 @@
 import React, {Component} from "react";
-import {PanResponder, ImageBackground, StyleSheet, Text, TextInput, View, Button, TouchableOpacity} from "react-native";
+import {PanResponder, ImageBackground, StyleSheet, Text, TextInput, View,  TouchableOpacity} from "react-native";
+import { Button } from 'react-native-elements';
 
 export default class EnterName extends Component {
 
@@ -29,21 +30,27 @@ export default class EnterName extends Component {
                 }}>
                     <TextInput
                         style={{
-                            height: 40,
-                            width: "80%",
-                            fontSize: 25,
-                            fontWeight: "bold",
+                            textAlign: 'center',
+
+                            width: '50%',
+                            height: 50,
                             borderWidth: 2,
-                            borderColor: "#fff",
-                            color: "#000",
-                            backgroundColor: "#fff"
+                            borderColor: '#FF5722',
+                            borderRadius: 20,
+                            backgroundColor: "#FFFFFF",
+                            marginBottom:30
+
                         }}
                         onChangeText={text => this.onChangeText(text)}
                         value={name}
                     />
-                    <TouchableOpacity onPress={() => this.props.keepName(name)} style={stylesB.button}>
-                        <Text style={stylesB.buttonText}>Ok</Text>
-                    </TouchableOpacity>
+
+                        <Button
+                            style={{color:"#FF5722"}}
+                            onPress={() => this.props.keepName(name)}
+                            title="Vazhdo"
+                        />
+
                 </View>
 
             </ImageBackground>

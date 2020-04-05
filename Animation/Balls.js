@@ -11,11 +11,12 @@ export default class BouncingBallsComponent extends PureComponent {
                     amount={products.length}
                     products={products}
                     animationDuration={5000}
-                    minSpeed={30}
+                    minSpeed={200}
                     maxSpeed={200}
                     minSize={40}
-                    maxSize={100}
+                    maxSize={70}
                     imageBall={require('../images/bubble.gif')}
+
                 />
 
             </ImageBackground>

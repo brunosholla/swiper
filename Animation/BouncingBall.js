@@ -1,12 +1,15 @@
-import React, {Component} from 'react';
-import {View, Image, StyleSheet, Dimensions, Animated, Easing} from 'react-native';
+import React, {PureComponent} from 'react';
+import {View, Image, StyleSheet, Dimensions, Animated, Easing, Text, ImageBackground,TouchableOpacity} from 'react-native';
 import PropTypes from 'prop-types';
-let  { width, height } = Dimensions.get("window");
+import {responsiveFontSize} from "react-native-responsive-dimensions";
+import Printo from "../print/Printo";
 
-class BouncingBalls extends Component {
+let {width, height} = Dimensions.get("window");
+const AnimatedTouchable = Animated.createAnimatedComponent(TouchableOpacity);
+class BouncingBalls extends PureComponent {
     static propTypes = {
         amount: PropTypes.number.isRequired,
-        products:PropTypes.array.isRequired,
+        products: PropTypes.array.isRequired,
         animationDuration: PropTypes.number.isRequired,
         animationType: PropTypes.func,
         minSpeed: PropTypes.number.isRequired,
@@ -18,7 +21,13 @@ class BouncingBalls extends Component {
 
     static defaultProps = {
         amount: 1,
-        products:["X"],
+        products: [ {
+            "id": 100,
+            "name": "山",
+            "category":1,
+            "meaning":"This is a test"
+
+        }],
         animationDuration: 5000,
         minSpeed: 30,
         maxSpeed: 200,
@@ -37,6 +46,8 @@ class BouncingBalls extends Component {
         this.state = {
             position: new Animated.ValueXY({x: 0, y: 0}),
         };
+
+        this.printo=this.printo.bind(this)
     }
 
     componentDidMount() {
@@ -111,8 +122,13 @@ class BouncingBalls extends Component {
         return Math.floor(Math.random() * (max - min) + min);
     }
 
+    printo(product){
+
+
+    }
+
     generateCircles() {
-        const {amount,products, minSpeed, maxSpeed, minSize, maxSize, imageBall, style, ...restProps} = this.props;
+        const {amount, products, minSpeed, maxSpeed, minSize, maxSize, imageBall, style, ...restProps} = this.props;
         const circles = [];
         let width, height, borderRadius, innerStyle, restStyles, item, direction;
 
@@ -137,12 +153,32 @@ class BouncingBalls extends Component {
             };
 
             item = imageBall ?
-                <Image
-                    source={imageBall}
+
+                <AnimatedTouchable style={[styles.circle, {...innerStyle}, {...style}]} {...restStyles} {...restProps} source={imageBall}
+                                   onPress={()=>this.printo(products[i])}>
+
+                <ImageBackground  style={[styles.circle, {...innerStyle}, {...style}]} {...restStyles} {...restProps} source={imageBall}  >
+                    <View style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        justifyContent: 'center',
+                        alignItems: 'center'
+                    }}>
+                        <Text style={{
+                            color: '#000',
+                            fontSize: responsiveFontSize(0.7),
+                            fontWeight: 'bold',
+                        }}>{products[i].name}</Text>
+                    </View>
+                </ImageBackground>
+                </AnimatedTouchable>
+
+                : <View
                     style={[styles.circle, {...innerStyle}, {...style}]} {...restStyles} {...restProps}
-                /> : <View
-                    style={[styles.circle, {...innerStyle}, {...style}]} {...restStyles} {...restProps}
-                />;
+                ><Text style={{color: "#000"}}>A</Text></View>;
 
             circles.push(item);
         }
@@ -171,8 +207,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         position: 'absolute',
-        width: '99%',
-        height: '99%',
+        width: '100%',
+        height: '100%',
     },
     circle: {
         position: 'absolute',
