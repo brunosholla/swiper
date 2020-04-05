@@ -26,8 +26,12 @@
     "ios": {
       "supportsTablet": true
     },
+    "android": {
+      "package": "al.bruno.sholla",
+      "versionCode": 1
+    },
     "entryPoint": "node_modules/expo/AppEntry.js"
   },
   "displayName": "Kungfu Express - Albania",
-  "name": "al.bruno.sholla"
+
 }

@@ -114,7 +114,7 @@ export default class Bubble extends Component {
 
     _onPressButton(emoji) {
         const {name} = this.props
-        console.log("emoji::",emoji.name,"meaning::",emoji.meaning,"name::",name)
+        alert("emoji::"+emoji.name+"meaning::"+emoji.meaning+"name::"+name)
     }
 
     render() {

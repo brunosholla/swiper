@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f163741b-7bd5-4e48-abf5-c111a2cc5576" name="Default" comment="Added Header and Footer">
-      <change afterPath="$PROJECT_DIR$/Adverts/EnterName.js" afterDir="false" />
+    <list default="true" id="f163741b-7bd5-4e48-abf5-c111a2cc5576" name="Default" comment="Added EnterName Component">
+      <change afterPath="$PROJECT_DIR$/Animation/Balls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Animation/BouncingBall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainC.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/InactivityDetector.js" beforeDir="false" afterPath="$PROJECT_DIR$/Services/InactivityDetector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adverts/EnterName.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adverts/EnterName.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animation/Bubble.js" beforeDir="false" afterPath="$PROJECT_DIR$/Animation/Bubble.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="my-new-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,23 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="InactivityDetector.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Services/InactivityDetector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+            <state>
+              <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -48,23 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnterName.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EnterName.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Adverts/EnterName.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Adverts/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+            <state relative-caret-position="221">
+              <caret line="44" column="55" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="55" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -84,8 +67,44 @@
       <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="156">
+              <caret line="42" column="62" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Balls.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Animation/Balls.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BouncingBall.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Animation/BouncingBall.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="134" column="14" lean-forward="true" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/products.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -106,6 +125,7 @@
       <find>category</find>
       <find>Swiper</find>
       <find>module.exports</find>
+      <find>resizeMode</find>
     </findStrings>
     <replaceStrings>
       <replace>meaning</replace>
@@ -125,30 +145,33 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/sendData.js" />
         <option value="$PROJECT_DIR$/data.json" />
-        <option value="$PROJECT_DIR$/data/data.json" />
         <option value="$PROJECT_DIR$/Animation/animate.js" />
         <option value="$PROJECT_DIR$/Animation/Bubbles.js" />
         <option value="$PROJECT_DIR$/Animation/Animate.js" />
-        <option value="$PROJECT_DIR$/data/description.json" />
         <option value="$PROJECT_DIR$/node_modules/react-native-swiper/src/index.js" />
         <option value="$PROJECT_DIR$/Animation/BubbleGrid.js" />
-        <option value="$PROJECT_DIR$/data/products.json" />
-        <option value="$PROJECT_DIR$/style.js" />
-        <option value="$PROJECT_DIR$/Animation/Bubble.js" />
-        <option value="$PROJECT_DIR$/node_modules/react-native-animated-emoji/lib/AnimatedEmoji.js" />
         <option value="$PROJECT_DIR$/print/template.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/babel.config.js" />
-        <option value="$PROJECT_DIR$/Main.js" />
         <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/node_modules/react-native-timed-slideshow/src/index.js" />
         <option value="$PROJECT_DIR$/Services/functions.js" />
-        <option value="$PROJECT_DIR$/Adverts/index.js" />
         <option value="$PROJECT_DIR$/node_modules/react-native-timed-slideshow/src/styles.js" />
-        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/Adverts/index.js" />
         <option value="$PROJECT_DIR$/Services/InactivityDetector.js" />
+        <option value="$PROJECT_DIR$/data/description.json" />
+        <option value="$PROJECT_DIR$/data/data.json" />
+        <option value="$PROJECT_DIR$/style.js" />
+        <option value="$PROJECT_DIR$/node_modules/react-native-animated-emoji/lib/AnimatedEmoji.js" />
+        <option value="$PROJECT_DIR$/Animation/Bubble.js" />
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/data/products.json" />
+        <option value="$PROJECT_DIR$/Main.js" />
+        <option value="$PROJECT_DIR$/node_modules/react-native-bouncing-ball/index.js" />
+        <option value="$PROJECT_DIR$/Animation/BouncingBall.js" />
         <option value="$PROJECT_DIR$/Adverts/EnterName.js" />
+        <option value="$PROJECT_DIR$/Animation/Balls.js" />
       </list>
     </option>
   </component>
@@ -1259,7 +1282,7 @@
             <path>
               <item name="my-new-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="swiper" type="462c0819:PsiDirectoryNode" />
-              <item name="Adverts" type="462c0819:PsiDirectoryNode" />
+              <item name="Animation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1273,22 +1296,22 @@
     <property name="JavaScriptLanguageLevel" value="JSX" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eBileta-new" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/projects/balls" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\PhpstormProjects\swiper\data\" />
-      <recent name="C:\Users\user\PhpstormProjects\swiper\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PhpstormProjects\swiper" />
       <recent name="C:\Users\user\PhpstormProjects\swiper\Adverts\images" />
       <recent name="C:\Users\user\PhpstormProjects\swiper\images" />
       <recent name="C:\Users\user\PhpstormProjects\swiper\Animation" />
-      <recent name="C:\Users\user\PhpstormProjects\swiper" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PhpstormProjects\swiper\data\" />
+      <recent name="C:\Users\user\PhpstormProjects\swiper\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1303,7 +1326,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.web">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -1335,6 +1358,15 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
     <configuration name="web" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -1344,9 +1376,14 @@
       <node-interpreter value="project" />
       <envs />
     </configuration>
+    <list>
+      <item itemvalue="npm.web" />
+      <item itemvalue="npm.start" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.web" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -1373,7 +1410,10 @@
       <workItem from="1582553543113" duration="6735000" />
       <workItem from="1582668055211" duration="5767000" />
       <workItem from="1582832313673" duration="7681000" />
-      <workItem from="1582925710691" duration="4821000" />
+      <workItem from="1582925710691" duration="10622000" />
+      <workItem from="1583093998808" duration="2344000" />
+      <workItem from="1586076986747" duration="2304000" />
+      <workItem from="1586084251550" duration="3317000" />
     </task>
     <task id="LOCAL-00001" summary="Changed the logic of iterating">
       <created>1582270483211</created>
@@ -1466,30 +1506,51 @@
       <option name="project" value="LOCAL" />
       <updated>1582840514030</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added EnterName Component">
+      <created>1582930575034</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582930575034</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added EnterName Component">
+      <created>1582931669566</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1582931669566</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added EnterName Component">
+      <created>1583005818732</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1583005818732</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96035000" />
+    <option name="totallyTimeSpent" value="109801000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.32133675" side_tool="true" visible="true" weight="0.36363637" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.32262212" side_tool="true" visible="true" weight="0.32027972" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4993573" weight="0.32867134" />
-      <window_info id="npm" order="2" sideWeight="0.47472528" side_tool="true" weight="0.22300771" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.67866325" visible="true" weight="0.36363637" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4929306" weight="0.32027972" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52527475" visible="true" weight="0.22300771" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49871466" weight="0.32867134" />
+      <window_info id="npm" order="2" sideWeight="0.47942388" side_tool="true" weight="0.2281491" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6773779" visible="true" weight="0.32027972" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49100256" weight="0.32027972" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5205761" visible="true" weight="0.2281491" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1519,36 +1580,10 @@
     <MESSAGE value="added .env" />
     <MESSAGE value="Added slideshow" />
     <MESSAGE value="some changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
+    <MESSAGE value="Added EnterName Component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added EnterName Component" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/local.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-native/ReactAndroid/src/androidTest/js/ProgressBarTestModule.js" />
-    <entry file="file://$PROJECT_DIR$/sendData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/balloon.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-native-anime/src/anime.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/react-native-web/src/vendor/react-native/Animated/Easing.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1602,27 +1637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/description.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/products.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2958">
-          <caret line="174" column="3" selection-start-line="174" selection-start-column="3" selection-end-line="174" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/bg.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1660,28 +1674,10 @@
     <entry file="file://$PROJECT_DIR$/print/template.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Animation/Bubble.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="140" column="27" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#89#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-native-animated-emoji/lib/AnimatedEmoji.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="206" column="44" selection-start-line="206" selection-start-column="44" selection-end-line="206" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1723,13 +1719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/react-native/react-native-implementation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -1739,20 +1728,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Adverts/images/1.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-native-timed-slideshow/src/styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="109" column="6" lean-forward="true" selection-start-line="103" selection-start-column="4" selection-end-line="109" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -1783,20 +1758,55 @@
     <entry file="file://$PROJECT_DIR$/Adverts/images/8.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react-native/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="1395" column="4" selection-start-line="1395" selection-start-column="4" selection-end-line="1395" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Adverts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+        <state relative-caret-position="238">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.js">
+    <entry file="file://$PROJECT_DIR$/data/description.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="61" column="30" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -1807,27 +1817,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
+    <entry file="file://$PROJECT_DIR$/Services/InactivityDetector.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        <state>
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react-native/index.d.ts">
+    <entry file="file://$PROJECT_DIR$/data/products.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="1395" column="4" selection-start-line="1395" selection-start-column="4" selection-end-line="1395" selection-end-column="4" />
+        <state relative-caret-position="272">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Services/InactivityDetector.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native-animated-emoji/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainC.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native-bouncing-ball/components/BouncingBalls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="43" lean-forward="true" selection-end-line="181" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native-bouncing-ball/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native-timed-slideshow/src/styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="47" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="42" column="62" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1836,10 +1880,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Adverts/EnterName.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
+        <state relative-caret-position="221">
+          <caret line="44" column="55" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="55" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native-animated-emoji/lib/AnimatedEmoji.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="209" column="76" lean-forward="true" selection-start-line="209" selection-start-column="66" selection-end-line="209" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Animation/Bubble.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="124" column="27" lean-forward="true" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#89#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Animation/BouncingBall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="134" column="14" lean-forward="true" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Animation/Balls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
